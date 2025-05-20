@@ -15,6 +15,7 @@ This document explains the internal logic, flow, and design of a **precise timin
 
 ## ⚙️ High-Level Architecture
 
+![architecture](https://github.com/user-attachments/assets/9efe38ef-ec4d-4628-a787-2527e3df8f7c)
 
 ---
 
@@ -52,7 +53,5 @@ This document explains the internal logic, flow, and design of a **precise timin
 - Output final guessed password (e.g., `secret42`).
 - Optionally log all timings for further visualization.
 
----
 
-## 🧪 Sample Output
 
