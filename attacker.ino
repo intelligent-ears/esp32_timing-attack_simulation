@@ -1,10 +1,10 @@
 #include <WiFi.h>
 #include <WiFiUdp.h>
 
-const char* ssid = "nalAr@1205";
-const char* password = "Arya@#1205";
+const char* ssid = "YOUR_SSID";
+const char* password = "PASSWORD";
 WiFiUDP udp;
-IPAddress victimIP(192, 168, 253, 22); 
+IPAddress victimIP(xxx , xxx ,xxx ,xxx);//victim ip address 
 unsigned int victimPort = 4210;
 
 const char charset[] = "abcdefghijklmnopqrstuvwxyz0123456789";
